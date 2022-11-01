@@ -18,17 +18,26 @@ public class Driver {
     static WebDriver driver;
 
 
-
     public static WebDriver getDriver() {
         if (driver == null) {
             switch (ConfigReader.getProperty("browser")) {
+                case "chrome":
+                    ChromeOptions options = new ChromeOptions();
+                    options.addArguments("--incognito");
+                    options.addArguments("--start-maximized");
+                    options.addArguments("--ignore-certificate-errors");
+                    options.addArguments("--allow-insecure-localhost");
+                    options.addArguments("--acceptInsecureCerts");
+                    options.addArguments("--disable-blink-features=AutomationControlled");
+                    options.addArguments("--disable-extensions");
+                    WebDriverManager.chromedriver().setup();
+                    driver = new ChromeDriver(options);
+
+                    break;
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();
                     driver = new FirefoxDriver();
-                    break;
-                case "opera":
-                    WebDriverManager.operadriver().setup();
-                    driver = new OperaDriver();
+
                     break;
                 case "edge":
                     WebDriverManager.edgedriver().setup();
@@ -40,8 +49,9 @@ public class Driver {
                     break;
 
                 default:
-                    WebDriverManager.chromedriver().setup();
-                    driver = new ChromeDriver();
+
+                    WebDriverManager.operadriver().setup();
+                    driver = new OperaDriver();
 
 
             }
