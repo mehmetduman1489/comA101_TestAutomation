@@ -1,0 +1,6 @@
+2022-11-03 13:31:29,392 INFO t.US001_Tc01 [main] ilk ürüne tıklanır
+2022-11-03 13:31:33,806 INFO t.US001_Tc01 [main] ürün birinci satıcı için sepete eklenir
+2022-11-03 13:31:37,877 INFO t.US001_Tc01 [main] ürün sepetim sayfasında doğrulanır
+2022-11-03 13:31:38,102 INFO t.US001_Tc01 [main] ürüne tekrar tıklanır
+2022-11-03 13:31:42,101 INFO t.US001_Tc01 [main] ürün ikinci satıcı için sepete eklenir
+2022-11-03 13:31:49,757 INFO t.US001_Tc01 [main] ikinci satici için sepete eklendiği doğrulanır.

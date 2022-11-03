@@ -1,0 +1,6 @@
+2022-11-03 13:31:03,300 INFO t.US001_Tc01 [main] ürüne tekrar tıklanır
+2022-11-03 13:31:07,231 INFO t.US001_Tc01 [main] ürün ikinci satıcı için sepete eklenir
+2022-11-03 13:31:14,364 INFO t.US001_Tc01 [main] ikinci satici için sepete eklendiği doğrulanır.
+2022-11-03 13:31:14,369 TRACE i.n.h.c.h.w.WebSocket08FrameEncoder [AsyncHttpClient-1-4] Encoding WebSocket Frame opCode=8 length=26
+2022-11-03 13:31:21,266 INFO t.US001_Tc01 [main] Hepsi Burada ana sayfasina gidilir
+2022-11-03 13:31:22,659 INFO t.US001_Tc01 [main] ürün araması yapılır

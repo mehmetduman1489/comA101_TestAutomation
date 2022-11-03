@@ -1,0 +1,7 @@
+2022-11-03 13:30:32,198 INFO t.US001_Tc01 [main] Hepsi Burada ana sayfasina gidilir
+2022-11-03 13:30:37,996 INFO t.US001_Tc01 [main] User girisi yapilir
+2022-11-03 13:30:44,793 INFO t.US001_Tc01 [main] User giris dogrulamasi yapilir
+2022-11-03 13:30:45,153 INFO t.US001_Tc01 [main] ürün araması yapılır
+2022-11-03 13:30:51,968 INFO t.US001_Tc01 [main] ilk ürüne tıklanır
+2022-11-03 13:30:56,480 INFO t.US001_Tc01 [main] ürün birinci satıcı için sepete eklenir
+2022-11-03 13:31:02,974 INFO t.US001_Tc01 [main] ürün sepetim sayfasında doğrulanır
