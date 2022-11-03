@@ -12,7 +12,7 @@
 Proje Hepsi Burada domaininde kayıtlı ve kayıtsız kullanıcı olarak ürün aratma ve sepete ekleme ünitesini test eder.
 
 
-- --Sistem Gereksinimleri
+# Sistem Gereksinimleri
 
 - :sparkles: Java 19.0.
 - :sparkles: Intellij IDEA  Version: 2022.2.3  Build: 222.4345.14.
@@ -21,7 +21,7 @@ Proje Hepsi Burada domaininde kayıtlı ve kayıtsız kullanıcı olarak ürün 
 
 
 
-- --pom.xml DEPENDENCY VERSİON
+# Dependency Version
 
 - :sparkles: Selenium 4.0.2.
 - :sparkles: TestNG 7.4.0.
@@ -32,27 +32,27 @@ Proje Hepsi Burada domaininde kayıtlı ve kayıtsız kullanıcı olarak ürün 
 
 
 
-- --Nasıl Run Edilir
+# Nasıl Run Edilir
 
 - :sparkles:Kurulumlar yapıldıktan sonra İntellij IDEA da File/New/Project From Vesion Control açılır.
 - :sparkles:https://github.com/mehmetduman1489/comA101_TestAutomation adresinden proje clone yapılır.
-- :sparkles:src/test/java/tests/US001_Test.java yolundaki class, class seviyesinden run edilir.
-- :sparkles: Priority sebebiyle Önce TC01 daha sonra TC02 testi çalışır.
+
+- :sparkles: Birinci Yol:src/test/java/tests yolundaki classlar, class seviyesinden run edilir.
+- :sparkles: İkinci yol:classRun.xml file üzerinden sağ tıklayıp tüm classlar run edilir. methodRun.xml file üzerinden methodlar run edilir.
 
 
 
-
-
-- Raporlama
+# Raporlama
 
 - :sparkles: Rapor için target/logs yolundaki dosyada log kayıtları tutulur. Log kayıtları için Log4J kullanılır. Ayrıca test run edildikten sonra konsolda da log kayıtları görünür.
+- :sparkles: Doğrulama yapılan sayfaların screenShot kaydı target/Screenshot yolundaki dosyada görülür
 
 
 
 
-- --Kullanılan Teknolojiler
+# Kullanılan Teknolojiler
 
-- :sparkles: Projede Java, Selenium, TestNG ve GitHub kullanılarak ayağa kaldırılır
+- :sparkles: Projede Java, Selenium, TestNG ve GitHub kullanılarak ayağa kaldırılır.
 
 
 
