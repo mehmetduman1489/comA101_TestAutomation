@@ -1,4 +1,4 @@
-package page;
+package pages;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -39,18 +39,18 @@ public class HepsiBuradaPage {
     @FindBy(xpath = "//li[@class='productListContent-zAP0Y5msy8OHn5z7T_K_']")
     public List<WebElement> productList;
 
-    @FindBy(xpath = "//*[@class=\"button big with-icon\"]")
+    @FindBy(xpath = "//*[@class='button big with-icon']")
     public WebElement sepeteEkleButton;
 
     @FindBy(xpath = "//*[text()='Sepete git']")
     public WebElement sepeteGitButton;
-    @FindBy(xpath = "//*[text()='hepsiburada']")
+    @FindBy(xpath = "//*[text()='Lenovo IdeaPad 3 Intel Core i5 1135G7 8GB 512GB SSD Freedos 15.6\" FHD Taşınabilir Bilgisayar 82H8020BTX']")
     public WebElement birinciSaticiVerificition;
 
     @FindBy(xpath = "//*[@class='add-to-basket button small']")
     public List<WebElement>  ikinciSaticiList;
 
-    @FindBy(xpath = "//*[text()='adaonline']")
+    @FindBy(xpath = "//*[text()='Lenovo IdeaPad 3 Intel Core i5 1135G7 8GB 512GB SSD Freedos 15.6\" FHD Taşınabilir Bilgisayar 82H8020BTX']")
     public WebElement ikinciSaticiVerificition;
 
 }
