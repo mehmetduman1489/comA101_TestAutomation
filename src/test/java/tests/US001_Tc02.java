@@ -12,6 +12,8 @@ import utulities.ReusableMethods;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import static utulities.ReusableMethods.*;
+
 
 public class US001_Tc02 {
     /*
@@ -46,24 +48,24 @@ Secilen urunun dogru olarak eklendigi ‘Sepetim’ sayfasinda dogrulanmalidir.
         page.sepeteEkleButton.click();
         logger.info("ürün birinci satıcı için sepete eklenir");
         page.sepeteGitButton.click();
-        ReusableMethods.getSoftAssert().assertTrue(page.birinciSaticiVerificition.isDisplayed());
-        ReusableMethods.waitFor(5);
-        ReusableMethods.getScreenshot("first_product_screenshot");
+        getSoftAssert().assertTrue(page.birinciSaticiVerificition.isDisplayed());
+        waitFor(5);
+        getScreenshot("first_product_screenshot");
         logger.info("ürün sepetim sayfasında doğrulanır");
         Driver.getDriver().switchTo().window(handles.get(0));
         products.get(0).click();
         logger.info("ürüne tekrar tıklanır");
         List<String> newHandles = new ArrayList<>(Driver.getDriver().getWindowHandles());
         Driver.getDriver().switchTo().window(newHandles.get(2));
-        ReusableMethods.getActions().sendKeys(Keys.PAGE_DOWN).perform();
+        getActions().sendKeys(Keys.PAGE_DOWN).perform();
         logger.info("ürün ikinci satıcı için sepete eklenir");
         List<WebElement> ikinciSaticiList = page.ikinciSaticiList;
         ikinciSaticiList.get(0).click();
         page.sepeteGitButton.click();
-        ReusableMethods.getSoftAssert().assertTrue(page.ikinciSaticiVerificition.isDisplayed());
-        ReusableMethods.waitFor(5);
-        ReusableMethods.getScreenshot("second_product_screenshot");
-        ReusableMethods.getSoftAssert().assertAll();
+        getSoftAssert().assertTrue(page.ikinciSaticiVerificition.isDisplayed());
+        waitFor(5);
+        getScreenshot("second_product_screenshot");
+        getSoftAssert().assertAll();
         logger.info("ikinci satici için sepete eklendiği doğrulanır.");
         Driver.quitDriver();
     }

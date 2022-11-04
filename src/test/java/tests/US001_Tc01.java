@@ -9,12 +9,10 @@ import org.testng.annotations.Test;
 import pages.HepsiBuradaPage;
 import utulities.ConfigReader;
 import utulities.Driver;
-import utulities.ReusableMethods;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
-
+import static utulities.ReusableMethods.*;
 
 
 public class US001_Tc01 {/*
@@ -43,16 +41,16 @@ Secilen urunun dogru olarak eklendigi ‘Sepetim’ sayfasinda dogrulanmalidir.
         page = new HepsiBuradaPage();
         Driver.getDriver().get(ConfigReader.getProperty("hepsiUrl"));
         logger.info("Hepsi Burada ana sayfasina gidilir");
-        ReusableMethods.waitForClickablility(page.acceptButton, 10);
+        waitForClickablility(page.acceptButton, 10);
         page.acceptButton.click();
-        ReusableMethods.hover(page.girisActionButton);
+        hover(page.girisActionButton);
         page.girisYapButton.click();
         page.emailSend.sendKeys("mehmetduman8914@hotmail.com", Keys.ENTER);
         page.sifreSend.sendKeys("Test12345.", Keys.ENTER);
         logger.info("User girisi yapilir");
-        ReusableMethods.getSoftAssert().assertTrue(page.userVerification.isDisplayed());
-        ReusableMethods.waitFor(3);
-        ReusableMethods.getScreenshot("user_screenshot");
+        getSoftAssert().assertTrue(page.userVerification.isDisplayed());
+        waitFor(3);
+        getScreenshot("user_screenshot");
         logger.info("User giris dogrulamasi yapilir");
         page.searcButton.sendKeys("lenova ideapad 3", Keys.ENTER);
         logger.info("ürün araması yapılır");
@@ -64,24 +62,24 @@ Secilen urunun dogru olarak eklendigi ‘Sepetim’ sayfasinda dogrulanmalidir.
         page.sepeteEkleButton.click();
         logger.info("ürün birinci satıcı için sepete eklenir");
         page.sepeteGitButton.click();
-        ReusableMethods.getSoftAssert().assertTrue(page.birinciSaticiVerificition.isDisplayed());
-        ReusableMethods.waitFor(5);
-        ReusableMethods.getScreenshot("first_product_screenshot");
+        getSoftAssert().assertTrue(page.birinciSaticiVerificition.isDisplayed());
+        waitFor(5);
+        getScreenshot("first_product_screenshot");
         logger.info("ürün sepetim sayfasında doğrulanır");
         Driver.getDriver().switchTo().window(handles.get(0));
         products.get(0).click();
         logger.info("ürüne tekrar tıklanır");
         List<String> newHandles = new ArrayList<>(Driver.getDriver().getWindowHandles());
         Driver.getDriver().switchTo().window(newHandles.get(2));
-        ReusableMethods.getActions().sendKeys(Keys.PAGE_DOWN).perform();
+        getActions().sendKeys(Keys.PAGE_DOWN).perform();
         logger.info("ürün ikinci satıcı için sepete eklenir");
         List<WebElement> ikinciSaticiList = page.ikinciSaticiList;
         ikinciSaticiList.get(0).click();
         page.sepeteGitButton.click();
-        ReusableMethods.getSoftAssert().assertTrue(page.ikinciSaticiVerificition.isDisplayed());
-        ReusableMethods.waitFor(5);
-        ReusableMethods.getScreenshot("second_product_screenshot");
-        ReusableMethods.getSoftAssert().assertAll();
+        getSoftAssert().assertTrue(page.ikinciSaticiVerificition.isDisplayed());
+        waitFor(5);
+        getScreenshot("second_product_screenshot");
+        getSoftAssert().assertAll();
         logger.info("ikinci satici için sepete eklendiği doğrulanır.");
         Driver.quitDriver();
 
