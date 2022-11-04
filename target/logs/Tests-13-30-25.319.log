@@ -1,5 +1,0 @@
-2022-11-03 13:30:25,318 DEBUG i.n.b.ByteBufUtil [main] -Dio.netty.threadLocalDirectBufferSize: 0
-2022-11-03 13:30:25,320 DEBUG i.n.b.ByteBufUtil [main] -Dio.netty.maxThreadLocalCharBufferSize: 16384
-2022-11-03 13:30:25,788 DEBUG i.n.c.DefaultChannelId [Forwarding newSession on session null to remote] -Dio.netty.processId: 5884 (auto-detected)
-2022-11-03 13:30:25,792 DEBUG i.n.u.NetUtil [Forwarding newSession on session null to remote] -Djava.net.preferIPv4Stack: false
-2022-11-03 13:30:25,793 DEBUG i.n.u.NetUtil [Forwarding newSession on session null to remote] -Djava.net.preferIPv6Addresses: false

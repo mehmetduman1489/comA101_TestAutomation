@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Method Run">
+    <test name="method">
+        <classes>
+            <class name="tests.US001_Tc01">
+                <methods>
+                    <include name="us01_Tc01"/>
+                </methods>
+            </class>
+            <class name="tests.US001_Tc02">
+                <methods>
+                    <include name="us01_Tc02"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
