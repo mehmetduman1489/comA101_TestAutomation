@@ -33,7 +33,7 @@ Secilen urunun dogru olarak eklendigi ‘Sepetim’ sayfasinda dogrulanmalidir.
 
     private static Logger logger = LogManager.getLogger(US001_Tc01.class.getName());
     HepsiBuradaPage page;
-
+@a
 
     @Test
 
