@@ -35,7 +35,7 @@ Secilen urunun dogru olarak eklendigi ‘Sepetim’ sayfasinda dogrulanmalidir.
     HepsiBuradaPage page;
 @a
 
-    @Test
+    @Test (groups = "e2e")
 
     public void us01_Tc01() throws IOException {
         page = new HepsiBuradaPage();
@@ -45,8 +45,8 @@ Secilen urunun dogru olarak eklendigi ‘Sepetim’ sayfasinda dogrulanmalidir.
         page.acceptButton.click();
         hover(page.girisActionButton);
         page.girisYapButton.click();
-        page.emailSend.sendKeys("mehmetduman8914@hotmail.com", Keys.ENTER);
-        page.sifreSend.sendKeys("Test12345.", Keys.ENTER);
+        page.emailSend.sendKeys(ConfigReader.getProperty("email"), Keys.ENTER);
+        page.sifreSend.sendKeys(ConfigReader.getProperty("sifre"), Keys.ENTER);
         logger.info("User girisi yapilir");
         getSoftAssert().assertTrue(page.userVerification.isDisplayed());
         waitFor(3);

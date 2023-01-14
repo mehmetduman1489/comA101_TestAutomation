@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="E2e test">
+    <test name="E2e test">
+        <groups>
+            <run>
+                <exclude name="gp1"/>
+                <include name="e2e"/>
+            </run>
+        </groups>
+    </test>
+    <packages>
+        <package name="tests"/>
+    </packages>
+</suite>

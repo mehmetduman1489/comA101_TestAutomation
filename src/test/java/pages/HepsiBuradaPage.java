@@ -27,13 +27,13 @@ public class HepsiBuradaPage {
     @FindBy(xpath = "//input[@id='txtUserName']")
     public WebElement emailSend;
 
-    @FindBy(xpath = "//input[@id='txtPassword']")
+    @FindBy(xpath = "//*[@id='txtPassword']")
     public WebElement sifreSend;
 
     @FindBy(xpath = "//*[text()='Mehmet Duman']")
     public WebElement userVerification;
 
-    @FindBy(xpath = "//*[@class='desktopOldAutosuggestTheme-UyU36RyhCTcuRs_sXL9b']")
+    @FindBy(xpath = "//*[@placeholder='Ürün, kategori veya marka ara']")
     public WebElement searcButton;
 
     @FindBy(xpath = "//li[@class='productListContent-zAP0Y5msy8OHn5z7T_K_']")
@@ -53,6 +53,8 @@ public class HepsiBuradaPage {
     @FindBy(xpath = "//*[text()='Lenovo IdeaPad 3 Intel Core i5 1135G7 8GB 512GB SSD Freedos 15.6\" FHD Taşınabilir Bilgisayar 82H8020BTX']")
     public WebElement ikinciSaticiVerificition;
 
+    @FindBy(xpath = "//*[@id='btnLogin']")
+    public WebElement login1Button;
 }
 
 
