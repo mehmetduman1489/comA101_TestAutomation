@@ -1,0 +1,7 @@
+2022-11-04 22:30:00,131 INFO t.US001_Tc02 [main] Hepsi Burada ana sayfasina gidilir
+2022-11-04 22:30:12,793 INFO t.US001_Tc02 [main] ürün araması yapılır
+2022-11-04 22:30:13,763 INFO t.US001_Tc02 [main] ilk ürüne tıklanır
+2022-11-04 22:30:21,141 INFO t.US001_Tc02 [main] ürün birinci satıcı için sepete eklenir
+2022-11-04 22:30:34,272 INFO t.US001_Tc02 [main] ürün sepetim sayfasında doğrulanır
+2022-11-04 22:30:34,560 INFO t.US001_Tc02 [main] ürüne tekrar tıklanır
+2022-11-04 22:30:40,055 INFO t.US001_Tc02 [main] ürün ikinci satıcı için sepete eklenir

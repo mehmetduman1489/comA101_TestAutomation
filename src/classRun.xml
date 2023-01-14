@@ -6,4 +6,8 @@
             <class name="tests.US001_Tc02"/>
         </classes>
     </test>
+    <packages>
+        <package name="tests.US001_Tc02"/>
+        <package name="tests.US001_Tc01"/>
+    </packages>
 </suite>

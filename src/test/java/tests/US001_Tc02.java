@@ -31,7 +31,7 @@ Secilen urunun dogru olarak eklendigi ‘Sepetim’ sayfasinda dogrulanmalidir.
     HepsiBuradaPage page= new HepsiBuradaPage();
 
 
-    @Test
+    @Test (groups = {"e2e",""})
     public void us01_Tc02() throws IOException {
         page = new HepsiBuradaPage();
         Driver.getDriver().get(ConfigReader.getProperty("hepsiUrl"));
